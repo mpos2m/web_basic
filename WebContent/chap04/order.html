@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>상품 주문서</title>
+<style>
+	.user{
+		width :300px;
+		height :100px;
+	}
+	fieldset{
+		width: 450px;
+		height:150px;
+	}
+	li{
+		list-style : none;
+	}
+	div{
+		margin : 20px 0 0 100px;
+	}
+</style>
+</head>
+<body>
+	<div class ="test">
+	<h1>상품주문서</h1>
+	<form action="Order" method="post">
+		<fieldset class = "user">
+			<legend>개인 정보</legend>
+				<ul>
+					<li>이름 <input type ="text" name = "name" id = "name" autofocus required placeholder="여백없이 입력"></li>
+					<li>연락처 <input type = "text" name = "tel" id = "tel" required placeholder="연락가능한 번호"></li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>배송지 정보</legend>
+				<ul>
+					<li>주소 <input type= "text" name = "address" id = "address" required ></li>
+					<li>전화번호 <input type = "text" name = "phone" id = "phone" required></li>
+					<li>메모<textarea cols = "40" rows = "3" name = "text" id ="text"></textarea></li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>주문정보</legend>
+				<ul>
+					<li>
+						<input type= "checkbox" name ="coffee" id = "coffee" value = "1">괴테말라 안티구아(100g)<input type="number" name = "amount1" id ="amount1" value = "0" min = "0" max ="50">개
+					</li>
+					<li>
+						<input type= "checkbox" name ="coffee" id = "coffee" value = "2">인도네시아 만델링(100g)<input type="number" name = "amount2" id ="amount2" value = "0" min = "0" max ="50">개
+					</li>
+					<li>
+						<input type= "checkbox" name ="coffee" id = "coffee" value = "3">탐라는도다(블렌딩)(100g)<input type="number" name = "amount3" id ="amount3" value = "0" min = "0" max ="50">개
+					</li>
+				</ul>
+		</fieldset>
+		<div>
+			<input type = "submit" value="주문하기">
+			<input type= "reset" value = "다시작성">
+		</div>
+	</form>
+	</div>
+</body>
+</html>

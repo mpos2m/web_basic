@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>FormTag Test</title>
+<style>
+	li{
+		list-style:none;
+		margin-top:50px;
+	}
+</style>
+</head>
+<body>
+	<h2>여름방학 특강신청</h2>
+	<form action ="FormTag" method="get">
+		<fieldset>
+			<legend>수강 신청인</legend>
+				<ul>
+					<li><label>아이디<input type = "text" name = "id" id = "id" placeholder="ID" autofocus required></label></li>
+					<li><label>비밀번호<input type = "password" name = "pass" id = "pass" readonly value="1234"></label></li>
+					<li><label>색선택 <input type = "color" value ="#fff000" name = "color" id = "color"></label></li>
+					<li><label>학과 선택</label>
+						<select size = "1" name = "subject">
+							<option value = "archi">건축공학과</option>
+							<option value = "mechanic">기계공학과</option>
+							<option value = "indust">산업공학과</option>
+							<option value = "elec">전기전자공학과</option>
+							<option value = "computer" selected>컴퓨터공학과</option>
+							<option value = "chemicel">화학공학과</option>
+						</select>	
+					</li>
+					<li>수강 과목<input type= "text" list="choices" name = "menu">
+						<datalist id = "choices">
+							<option value = "grammar" label = "문법" ></option>
+							<option value = "voca" label = "어휘"></option>
+							<option value = "speaking" label = "회화"></option>
+							<option value = "listening" label = "리스닝"></option>
+							<option value = "news" label = "뉴스청취"></option>
+						</datalist>
+					</li>
+					<li><label>메모<textarea rows = "5" cols="30" name = "notice" maxlength="200"></textarea></label></li>
+				</ul>						
+		</fieldset>
+		<input type = "submit" value="신청">
+	</form>
+</body>
+</html>

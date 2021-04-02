@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.txt {
+	color: green;
+}
+
+.txt1 {
+	color: blue;
+}
+
+.accent {
+	color: red;
+}
+
+.edited {
+	text-decoration: line-through;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+.trans1 {
+	text-transform: uppercase;
+}
+
+.trans2 {
+	text-transform: capitalize;
+}
+
+.shadow1{
+	color:orange;
+	text-shadow: 1px 1px;
+}
+
+.shadow2{
+	text-shadow: 5px 5px 3px red;
+}
+
+.shadow3{
+	color : white;
+	text-shadow: 3px -3px 3px black;
+}
+
+.shadow4{
+	color:black;
+	background-color:black;
+	text-shadow: 0 0 4px #ccc, 0 -5px 5px yellow, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;
+}
+
+.letter1{
+	letter-spacing: 0.2em;
+}
+
+.letter2{
+	letter-spacing: 0.5em;
+}

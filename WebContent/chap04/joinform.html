@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style>
+	li{
+	list-style:none;
+	margin-top:10px;
+	}
+	h1{
+		text-align: center;
+	}
+	body{
+		display:block;
+		margin:0 auto;
+	}
+	fieldset{
+		text-align : center;
+		width:350px;
+		height:200px;
+	}
+	#button{
+		width: 100px;
+		height:100px;
+	}
+</style>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form action="JoinForm" method ="post">
+		<fieldset>
+			<legend>로그인 정보</legend>
+				<ul>
+					<li>아이디 <input type ="text" name = "id" id = "id" autofocus required></li>
+					<li>비밀번호 <input type="password" name = "pass1" id = "pass1" required></li>
+					<li>비밀번호 확인 <input type="password" name = "pass2" id ="pass2" required></li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>개인 정보</legend>
+				<ul>
+					<li>이름<input type ="text" name = "name" id = "name" required></li>
+					<li>메일 주소<input type ="email" name = "email" id = "email" required></li>
+					<li>연락처<input type ="text" name ="phone" id = "phone" required></li>
+					<li>블로그/홈페이지<input type ="text" name = "blog" id = "blog"></li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>등록 정보</legend>
+				<ul>
+					<li>참여인원(최대 10명)<input type = "number" name = "member" id ="member" value="1" min="0" max="10" step ="1"></li>
+					<li>지원물품(1인당 5개)<input type = "number" name = "stuffs" id ="stuffs" value = "1" min="0" max="50"></li>
+					<li>희망단계(하,중,상)<input type = "range" name = "satis" id = "satis" value ="1" min="1" max ="3" ></li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>신청과목</legend>
+			<p>이 달에 신청할 과목을 선택하세요. (1과목만 선택 가능)</p>
+				<label><input type = "radio" name="subject" id = subject value="speaking">회화</label>
+				<label><input type = "radio" name="subject" id = subject value="grammar">문법</label>
+				<label><input type = "radio" name="subject" id = subject value="writing">작문</label>
+		</fieldset>
+		<fieldset>
+			<legend>메일링</legend>
+			<p>메일로 받고 싶은 뉴스 주제를 선택해 주세요.(복수 선택 가능)</p>
+			<ul id = "mailing">
+				<li>
+					<label><input type= "checkbox" name = "mailings" value ="news">해외 단신</label>
+				</li>
+				<li>
+					<label><input type= "checkbox" name = "mailings" value ="dialog">5분회화</label>
+				</li>
+				<li>
+					<label><input type= "checkbox" name = "mailings" value ="pops">모닝팝스</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>시간을 선택하세요.</legend>
+				<label>시작시간<input type= "time" name="timestart" id="timestart" value="09:00"></label><br>
+				<label>종료 시간<input type="time" name="timeend" id="timeend" value="18:00"></label>
+			<p>다른날짜를 선택하세요.</p>
+				<label>시작 시간<input type="date" name="start" id="start" value="2021-03-24"></label><br>
+				<label>종료 시간<input type="date" name="end" id="end" value="2021-03-24"></label>
+		</fieldset>
+		<input type="submit" name ="button" value="가입하기">
+	</form>
+</body>
+</html>

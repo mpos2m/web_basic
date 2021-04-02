@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Train+One&display=swap');
+
+h2 {
+	color: blue;
+}
+
+p {
+	margin-left: 20px;
+	font-family: 'Nanum Brush Script', 돋움;
+	font-size: 30px;
+}
+

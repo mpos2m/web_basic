@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	li{
+		list-style: none;
+	}
+</style>
+</head>
+<body>
+	<form action="WithLabel" method="get">
+		<h3>수강 분야</h3>
+		<ul id="gubun">
+			<li>
+				<label><input type="checkbox" name = "gubuns" value="grm">문법</label>
+			</li>
+			<li>
+				<label><input type="checkbox" name = "gubuns" value="wr">작문</label>
+			</li>
+			<li>
+				<label><input type="checkbox" name = "gubuns" value="rd">독해</label>
+			</li>
+		</ul>
+		<h3>수강 과목</h3>
+		<ul id ="subject">
+		
+			<li>
+				<label><input type="radio" name = "subject" value = "eng">영어</label>
+			</li>
+			<li>
+				<label><input type="radio" name = "subject" value = "ch">중국어</label>
+			</li>
+			<li>
+				<label><input type="radio" name = "subject" value = "jp">일어</label>
+			</li>
+		</ul>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
